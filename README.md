@@ -6,12 +6,13 @@
 ### Tech Stack - SwiftUI, Combine, MVVM, Kingfisher
 ### Документация - [The Rick and Morty API](https://rickandmortyapi.com/)
 
-:small_blue_diamond: Character
+:small_blue_diamond: Character list
+
 :radio_button: Filter Character
 
-:small_blue_diamond: Location
+:small_blue_diamond: Location list
 
-:small_blue_diamond: Episode
+:small_blue_diamond: Episode list
 
 <h1 align="center">    
     Character
