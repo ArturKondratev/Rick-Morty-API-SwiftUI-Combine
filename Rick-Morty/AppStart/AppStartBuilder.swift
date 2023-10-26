@@ -45,7 +45,8 @@ struct MainView: View {
         }
         .navigationTitle(selectedTab.rawValue)
         .navigationBarBackButtonHidden(true)
-        .foregroundColor(self.colorScheme == .light ? .blue : .orange)
+        .accentColor(self.colorScheme == .light ? .blue : .orange)
+        .foregroundStyle(self.colorScheme == .light ? .blue : .orange)
     }
     
     func CharactersBuilder() -> some View {

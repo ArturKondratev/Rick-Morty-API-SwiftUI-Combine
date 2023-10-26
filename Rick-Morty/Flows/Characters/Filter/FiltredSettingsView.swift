@@ -12,6 +12,7 @@ struct FiltredSettingsView: View {
     
     @State private var tags: [Tag] = []
     @EnvironmentObject var filter: Filter
+    @Environment(\.presentationMode) private var presentetionMode: Binding<PresentationMode>
     
     var body: some View {
         NavigationView {
@@ -30,7 +31,9 @@ struct FiltredSettingsView: View {
                 }
             }
             .navigationTitle(Text("Select character"))
-            .navigationBarItems(trailing: Button("Done"){ })
+            .navigationBarItems(trailing: Button("Done"){
+                presentetionMode.wrappedValue.dismiss()
+            })
             .environmentObject(self.filter)
         }
     }

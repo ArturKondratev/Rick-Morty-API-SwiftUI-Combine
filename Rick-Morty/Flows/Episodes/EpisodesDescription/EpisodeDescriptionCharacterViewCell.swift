@@ -16,6 +16,7 @@ struct EpisodeDescriptionCharacterViewCell: View {
     var body: some View {
         HStack {
             KFImage(URL(string: iconUrl))
+                .resizable()
                 .avatarModifier()
                 .padding(10)
                 
